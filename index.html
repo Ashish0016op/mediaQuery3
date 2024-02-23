@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    .Nav_Menu{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .hambrgr{
+        width: 30px;
+        height: 30px;
+        display: none;
+    }
+    .hand_png{
+        width: 50px;
+        height: 50px;
+    }
+    .intro_1{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 30px;
+        align-items: center;
+
+    }
+    .intro_h{
+        display: flex;
+        gap:10px
+    }
+    
+    .pc_image{
+        height: 400px;
+        width: 400px;
+    }
+    .intro_sec{
+        align-items: center;
+        justify-content: center;
+    }
+    .projects{
+        border-bottom: 2px solid blueviolet;
+    }
+    .project_sec{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .p_image{
+        width: 30vh;
+    }
+    .p_sec{
+        text-align: center;
+    }
+    .image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 77px;
+    margin: 0 auto;
+}
+.logo_image{
+    width: 30px;
+}
+.footer_cont{
+    text-align: center;
+}
+h2.Contact {
+    border-bottom: 2px solid blueviolet;
+    width: fit-content;
+    margin: 0 auto;
+}
+.contact_logo {
+    margin-top: 16px;
+}
+    @media screen and (max-width: 1000px) {
+        .hambrgr{
+            display: block;
+        }
+        .Nav_Menu{
+            display: none;
+        }
+        .intro_1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+    
+</style>
+<body>
+    <nav class="navbar">
+        <ul class="Nav_Menu">
+            <li>
+                Home
+            </li>
+            <li>
+                Projects
+            </li>
+            <li>
+                Technologies
+            </li>
+            <li>
+                Contacts
+            </li>
+        </ul>
+        <div>
+            <img class="hambrgr" src="./assets/hambrger.png" alt="logo"/>
+        </div>
+    </nav>
+    <section class="intro_sec">
+        <div class="intro_1">
+            <div class="t_intro">
+                <div class="intro_h">
+                    <img class="hand_png" src="./assets/waving-hand.png" alt="hand png"/>
+                    <p>Hi Everyone</p>
+                </div>
+                <h1>Mark Anderson</h1>
+                <p>Developer</p> 
+            </div>
+            <div>
+                <img class="pc_image" src="./assets/pc-image.png" alt="pc image"/>
+            </div>
+        </div>
+    </section>
+    <div class="p_sec">
+        <div class="project_sec">
+            <h2 class="projects">Projects</h2>
+        </div>
+        <div class="image">
+            <div class="image_b">
+                <img class="p_image" src="./assets/image.png" alt="image"/>
+                <p>Project1</p>
+            </div>
+            <div class="image_b">
+                <img class="p_image" src="./assets/image.png" alt="image"/>
+                <p>Project2</p>
+            </div>
+            <div class="image_b">
+                <img class="p_image" src="./assets/image.png" alt="image"/>
+                <p>Project3</p>
+            </div>
+            <div class="image_b">
+                <img class="p_image" src="./assets/image.png" alt="image"/>
+                <p>Project4</p>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="footer_cont">
+            <div class="contact_cl">
+                <h2 class="Contact">
+                    Contact Me
+                </h2>
+            </div>
+            <div class="contact_logo">
+                <img class="logo_image" src="./assets/github.png" alt="github logo"/>
+                <img class="logo_image" src="./assets/linkedin.png" alt="linked logo"/>
+                <img class="logo_image" src="./assets/outlook.png" alt="outlook logo"/>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
